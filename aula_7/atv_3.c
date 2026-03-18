@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int soma_diagonal_principal = 0;
+int matriz[3][3] = {
+    {1,2,3},
+    {1,6,9},
+    {2,5,6}
+};
+
+int main () {
+    for (int i = 0; i < 3; i++){
+        soma_diagonal_principal += matriz[i][i];
+        }
+
+        printf("%d", soma_diagonal_principal);
+}
